@@ -1,0 +1,305 @@
+/* 
+
+    =====================================================
+    =====================================================
+auther ________AHMED RAGAB________  -_-   -_-  -_-  -_- 😍
+
+1__GitHUB
+https://github.com/Ahmed-Ragap
+ 
+2__LinkedIn
+https://www.linkedin.com/in/ahmed-ragap-2b01b4168/
+
+    =====================================================
+    =====================================================
+ */
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Courier Prime', monospace;
+    background-color:#ccc;
+    
+}
+button.toggle{
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+    padding: 5px;
+    border: none;
+    margin: 30px 30px 0 0;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: .4s ease-in-out ;
+    -webkit-transition: .4s ease-in-out ;
+    -moz-transition: .4s ease-in-out ;
+    -ms-transition: .4s ease-in-out ;
+    -o-transition: .4s ease-in-out ;
+}
+button span{
+    width: 40px;
+    height: 5px;
+    background-color: #f50;
+    display: block;
+    z-index: 100;
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+}
+.m{
+    margin: 6px auto;
+}
+/* class will added with js */
+.m_{
+ opacity: 0;
+ margin: 0;
+}
+/* class will added with js */
+ .f_{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    margin-bottom: -5px;
+}
+/* class will added with js */
+.l_{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    margin-top:-5px;
+}
+
+/* start container */
+
+.nav{
+    clip-path: circle(0 at 100% 0);
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    position: fixed;
+    right: 0;
+    height:0;
+    width: 0;
+    z-index: 90;
+    background-color: #f50;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./3.jpeg);
+  
+    
+}
+.imgKeyAnima{
+    animation-delay:2s;
+    animation:img 10s ease infinite alternate  ;
+    -webkit-animation:img 10s ease infinite alternate  ;
+}
+/* toggle  class will added with js */  
+.toggleClass{
+    clip-path: circle(700px at 100% 0);
+    background-color:#000;
+       height:100%; 
+       width: 100%;
+   }
+   @media (min-width:576px){
+    .toggleClass{
+        clip-path: circle(90vw at 100% 0);
+        height:90vw; 
+        width: 90vw;
+    }
+   
+}
+    @media (max-width:575px){
+        .nav, .toggleClass{
+           
+       
+            clip-path:none !important;
+        }
+      
+    }
+   
+ul{
+    list-style: none;
+   display: grid;
+   place-items: center;
+   align-items: center;
+   margin-top: 50px;
+   opacity:.2;
+   transition: .2s ease-in-out;
+   -webkit-transition: .2s ease-in-out;
+   -moz-transition: .2s ease-in-out;
+   -ms-transition: .2s ease-in-out;
+   -o-transition: .2s ease-in-out;
+
+
+}
+ul li{
+
+    margin: 10px auto;
+    z-index: 100;
+
+
+}
+ul li:hover{
+}
+ul li a{
+        text-decoration: none;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        color: #fff;
+        transition: .3s ease-in-out;
+        -webkit-transition: .3s ease-in-out;
+        -moz-transition: .3s ease-in-out;
+        -ms-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        border-bottom:3px solid  transparent;
+}
+ul li:hover a{
+    margin-left: 10px;
+   
+}
+/* class will added with js */
+.ul_{
+    opacity:1;
+    position: relative;
+}
+
+/* start animation block  */
+.animation{
+    width: 5px;
+    height: 5px;
+    background-color:rgba(8, 7, 7, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  
+}
+/* class will added with js */
+.anima{
+    animation:  zooming  10s ease-in-out infinite ;
+    -webkit-animation:  zooming  10s ease-in-out infinite ;
+    animation-delay: .5s;
+}
+
+
+
+@keyframes zooming {
+   
+100%{
+    opacity: .5;
+    transform: scale(400);
+    -webkit-transform: scale(400);
+    -moz-transform: scale(400);
+    -ms-transform: scale(400);
+    -o-transform: scale(400);
+
+}
+
+}
+
+
+
+@keyframes img {
+   
+    100%{
+     background-image:url(./2.jpeg);
+    
+    }
+    
+    }
+
+/* header */
+.container{
+    padding: 10px;
+    margin: 0 auto;
+}
+h3{
+    margin: 0px 0 10px 0;
+    position: relative;
+    font-size: 3rem;
+}
+h3:first-child{
+    padding-top: 50px;
+}
+h3::after{
+    content:"";
+    position: absolute;
+    border:1px solid #f50;
+    bottom: -5px;
+    left: 1px;
+    width: 30px;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+p{
+    
+    text-transform: capitalize;
+    max-width: 100%;
+    word-wrap: break-word;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 50px;
+
+}
+::selection{
+    color:rgb(0, 255, 21);
+    background-color:#f50
+}
+
+
+
+/* floutTitle */
+
+h4.floutTitle{
+    position: absolute;
+    content:"ahmed";
+    color:#999;
+    text-transform: capitalize;
+    top:15%;
+    margin: 0 auto;
+    font-size: 6rem; 
+    text-align: center;
+    z-index: -1;
+    opacity:.7 ;
+    bottom:0 !important    ;
+    left: calc(50% - 150px);
+    animation:HI_DO 5s ease-in-out infinite alternate;
+    -webkit-animation:HI_DO 5s ease-in-out infinite alternate;
+} 
+
+@keyframes HI_DO{
+    100%{margin-top:95%;
+        opacity: .2;
+       
+    }
+}
+
+
+.active{
+    border-bottom:3px solid  #f50;
+   
+}
